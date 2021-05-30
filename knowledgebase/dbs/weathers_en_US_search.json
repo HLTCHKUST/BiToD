@@ -1,0 +1,77 @@
+[
+    {
+        "Name": "day",
+        "Type": "Categorical",
+        "Categories": [
+            "today",
+            "tomorrow",
+            "sunday",
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday"
+        ]
+    },
+    {
+        "Name": "city",
+        "Type": "Categorical",
+        "Categories": [
+            "Abu Dhabi",
+            "Amsterdam",
+            "Barcelona",
+            "Beijing",
+            "Berlin",
+            "Canberra",
+            "Chicago",
+            "Denpasar",
+            "Dubai",
+            "Florence",
+            "Hong Kong",
+            "Jakarta",
+            "Kyoto",
+            "Las Vegas",
+            "Los Angeles",
+            "Madrid",
+            "Melbourne",
+            "Moscow",
+            "Muchen",
+            "New York",
+            "Osaka",
+            "Paris",
+            "Prague",
+            "Rome",
+            "San Francisco",
+            "Seattle",
+            "Seoul",
+            "Singapore",
+            "Tokyo",
+            "Toronto",
+            "Washington",
+            "Waterloo"
+        ]
+    },
+    {
+        "Name": "max_temp",
+        "Type": "Integer",
+        "Min": -50,
+        "Max": 50
+    },
+    {
+        "Name": "min_temp",
+        "Type": "Integer",
+        "Min": -50,
+        "Max": 50
+    },
+    {
+        "Name": "weather",
+        "Type": "Categorical",
+        "Categories": [
+            "clouds",
+            "rain",
+            "snow",
+            "sunny"
+        ]
+    }
+]

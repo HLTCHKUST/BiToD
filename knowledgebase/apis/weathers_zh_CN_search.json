@@ -1,0 +1,148 @@
+{
+    "input": [
+        {
+            "Name": "day",
+            "Type": "Categorical",
+            "Categories": [
+                "今天",
+                "明天",
+                "星期日",
+                "星期一",
+                "星期二",
+                "星期三",
+                "星期四",
+                "星期五",
+                "星期六"
+            ],
+            "ReadableName": "Day"
+        },
+        {
+            "Name": "city",
+            "Type": "Categorical",
+            "Categories": [
+                "东京",
+                "京都",
+                "佛罗伦萨",
+                "北京",
+                "华盛顿",
+                "堪培拉",
+                "墨尔本",
+                "多伦多",
+                "大阪",
+                "巴塞罗那",
+                "巴黎",
+                "布拉格",
+                "拉斯维加斯",
+                "新加坡",
+                "旧金山",
+                "柏林",
+                "洛杉矶",
+                "滑铁卢",
+                "登巴萨",
+                "穆琴",
+                "纽约",
+                "罗马",
+                "芝加哥",
+                "莫斯科",
+                "西雅图",
+                "迪拜",
+                "阿姆斯特丹",
+                "阿布扎比",
+                "雅加达",
+                "首尔",
+                "香港",
+                "马德里"
+            ],
+            "ReadableName": "City"
+        }
+    ],
+    "output": [
+        {
+            "Name": "day",
+            "Type": "Categorical",
+            "Categories": [
+                "今天",
+                "明天",
+                "星期日",
+                "星期一",
+                "星期二",
+                "星期三",
+                "星期四",
+                "星期五",
+                "星期六"
+            ],
+            "ReadableName": "Day"
+        },
+        {
+            "Name": "city",
+            "Type": "Categorical",
+            "Categories": [
+                "东京",
+                "京都",
+                "佛罗伦萨",
+                "北京",
+                "华盛顿",
+                "堪培拉",
+                "墨尔本",
+                "多伦多",
+                "大阪",
+                "巴塞罗那",
+                "巴黎",
+                "布拉格",
+                "拉斯维加斯",
+                "新加坡",
+                "旧金山",
+                "柏林",
+                "洛杉矶",
+                "滑铁卢",
+                "登巴萨",
+                "穆琴",
+                "纽约",
+                "罗马",
+                "芝加哥",
+                "莫斯科",
+                "西雅图",
+                "迪拜",
+                "阿姆斯特丹",
+                "阿布扎比",
+                "雅加达",
+                "首尔",
+                "香港",
+                "马德里"
+            ],
+            "ReadableName": "City"
+        },
+        {
+            "Name": "max_temp",
+            "Type": "Integer",
+            "Min": -50,
+            "Max": 50,
+            "ReadableName": "Maximum Temperature"
+        },
+        {
+            "Name": "min_temp",
+            "Type": "Integer",
+            "Min": -50,
+            "Max": 50,
+            "ReadableName": "Minimum Temperature"
+        },
+        {
+            "Name": "weather",
+            "Type": "Categorical",
+            "Categories": [
+                "下雨",
+                "下雪",
+                "多云",
+                "晴天"
+            ],
+            "ReadableName": "Weather"
+        }
+    ],
+    "required": [
+        "day",
+        "city"
+    ],
+    "db": "weathers",
+    "function": "generic_sample",
+    "returns_count": true
+}

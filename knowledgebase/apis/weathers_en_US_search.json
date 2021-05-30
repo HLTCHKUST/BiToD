@@ -1,0 +1,148 @@
+{
+    "input": [
+        {
+            "Name": "day",
+            "Type": "Categorical",
+            "Categories": [
+                "today",
+                "tomorrow",
+                "sunday",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday"
+            ],
+            "ReadableName": "Day"
+        },
+        {
+            "Name": "city",
+            "Type": "Categorical",
+            "Categories": [
+                "Abu Dhabi",
+                "Amsterdam",
+                "Barcelona",
+                "Beijing",
+                "Berlin",
+                "Canberra",
+                "Chicago",
+                "Denpasar",
+                "Dubai",
+                "Florence",
+                "Hong Kong",
+                "Jakarta",
+                "Kyoto",
+                "Las Vegas",
+                "Los Angeles",
+                "Madrid",
+                "Melbourne",
+                "Moscow",
+                "Muchen",
+                "New York",
+                "Osaka",
+                "Paris",
+                "Prague",
+                "Rome",
+                "San Francisco",
+                "Seattle",
+                "Seoul",
+                "Singapore",
+                "Tokyo",
+                "Toronto",
+                "Washington",
+                "Waterloo"
+            ],
+            "ReadableName": "City"
+        }
+    ],
+    "output": [
+        {
+            "Name": "day",
+            "Type": "Categorical",
+            "Categories": [
+                "today",
+                "tomorrow",
+                "sunday",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday"
+            ],
+            "ReadableName": "Day"
+        },
+        {
+            "Name": "city",
+            "Type": "Categorical",
+            "Categories": [
+                "Abu Dhabi",
+                "Amsterdam",
+                "Barcelona",
+                "Beijing",
+                "Berlin",
+                "Canberra",
+                "Chicago",
+                "Denpasar",
+                "Dubai",
+                "Florence",
+                "Hong Kong",
+                "Jakarta",
+                "Kyoto",
+                "Las Vegas",
+                "Los Angeles",
+                "Madrid",
+                "Melbourne",
+                "Moscow",
+                "Muchen",
+                "New York",
+                "Osaka",
+                "Paris",
+                "Prague",
+                "Rome",
+                "San Francisco",
+                "Seattle",
+                "Seoul",
+                "Singapore",
+                "Tokyo",
+                "Toronto",
+                "Washington",
+                "Waterloo"
+            ],
+            "ReadableName": "City"
+        },
+        {
+            "Name": "max_temp",
+            "Type": "Integer",
+            "Min": -50,
+            "Max": 50,
+            "ReadableName": "Maximum Temperature"
+        },
+        {
+            "Name": "min_temp",
+            "Type": "Integer",
+            "Min": -50,
+            "Max": 50,
+            "ReadableName": "Minimum Temperature"
+        },
+        {
+            "Name": "weather",
+            "Type": "Categorical",
+            "Categories": [
+                "clouds",
+                "rain",
+                "snow",
+                "sunny"
+            ],
+            "ReadableName": "Weather"
+        }
+    ],
+    "required": [
+        "day",
+        "city"
+    ],
+    "db": "weathers",
+    "function": "generic_sample",
+    "returns_count": true
+}
