@@ -1,1 +1,129 @@
-# BiToD
+# BiToD: A Bilingual Multi-Domain Dataset For Task-Oriented Dialogue Modeling
+
+
+
+## Citation:
+If you use any source codes or datasets included in this toolkit in your work, please cite the following paper. The bibtex is listed below:
+
+
+## Abstract:
+
+
+
+## Leaderboard
+
+## Dataset
+Training, validation and test data are avalible in `data` folder. We also provide the data split for cross-lingual few shot setting.
+```
+{
+    dialogue_id:{
+        "Scenario": {
+            "WizardCapabilities": [
+            ],
+            "User_Goal": {
+            }
+        }
+        "Events":{
+            {
+                "Agent": "User",
+                "Actions": [
+                    {
+                        "act": "inform_intent",
+                        "slot": "intent",
+                        "relation": "equal_to",
+                        "value": [
+                        "restaurants_en_US_search"
+                        ]
+                    }
+                ],
+                "active_intent": "restaurants_en_US_search",
+                "state": {
+                "restaurants_en_US_search": {}
+                },
+                "Text": "Hi, I'd like to find a restaurant to eat",
+            },
+            {
+                "Agent": "Wizard",
+                "Actions": [
+                    {
+                        "act": "request",
+                        "slot": "price_level",
+                        "relation": "",
+                        "value": []
+                    }
+                ],
+                "Text": "Hi there. Would you like a cheap or expensive restaurant?",
+                "PrimaryItem": null,
+                "SecondaryItem": null,
+            },
+            ...
+        }
+    }
+}
+```
+
+## Experimental Setup
+### Dependency
+Check the packages needed or simply run the command
+```console
+❱❱❱ pip install -r requirements.txt
+```
+
+### Setup MongoDB server
+```console
+❱❱❱ To-DO Genta
+```
+
+### Preprocessing
+```console
+❱❱❱ python preprocess.py --setting en
+```
+* --setting: data preprocessing for monolingual, bilingual, and crosslingual setting. Options: [en, zh, en_zh, en2zh, zh2en]
+
+## Baselines
+Here we show one example for training and evaluation. Check `run.sh` to run all the baselines
+
+### mT5(zh)
+**Train**
+```
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py \
+--model_name_or_path google/mt5-small \
+--do_train \
+--do_eval \
+--train_file data/preprocessed/zh_train.json \
+--validation_file data/preprocessed/zh_valid.json \
+--learning_rate 5e-4  \
+--num_train_epochs 8 \
+--source_lang en_XX \
+--target_lang en_XX \
+--logging_steps 100 \
+--save_steps 2000 \
+--output_dir save/zh_mt5_5e-4 \
+--per_device_train_batch_size=8 \
+--per_device_eval_batch_size=8 \
+--gradient_accumulation_steps 8 \
+--overwrite_output_dir \
+--predict_with_generate \
+--fp16 \
+--sharded_ddp zero_dp_3
+```
+
+* --model_name_or_path: path of pre-trained models
+* --train_file: preprocessed training file
+* --output_dir: output_dir
+
+**Evaluate Model**
+```console
+❱❱❱ CUDA_VISIBLE_DEVICES=0 python evaluate.py --model_path save/zh_mt5_5e-4 --setting zh --reference_file_path data/zh_test.json --save_prefix t5_
+```
+
+* --model_path: path of the trained model
+* --reference_file_path: test set data path
+* --save_prefix: prefix of result file
+
+**Evaluate File**
+We also support evalute the prediction file:
+```console
+❱❱❱ python evaluate.py --eval_mode eval_file --prediction_file_path result/zh_end2end_predictions.json --setting zh --reference_file_path data/zh_test.json
+```
+
