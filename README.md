@@ -110,7 +110,7 @@ Check the packages needed or simply run the command
 ## Baselines
 Here we show one example for training and evaluation. Check `run.sh` to run all the baselines
 
-<img src="img/bitod.gif" width="100%" height="100%" />
+<img src="bitod.gif" width="100%" height="100%" />
 
 
 ### mT5(zh)
