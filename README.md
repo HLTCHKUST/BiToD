@@ -97,8 +97,11 @@ Check the packages needed or simply run the command
 ```
 
 ### Setup MongoDB server
+Install MongoDB server. Please check the documentation in (this link)[https://docs.mongodb.com/manual/administration/install-community/].
+
+Then, export the DB dump by running the following command
 ```console
-❱❱❱ To-DO Genta
+❱❱❱ ./db/restore.sh
 ```
 
 ### Preprocessing
