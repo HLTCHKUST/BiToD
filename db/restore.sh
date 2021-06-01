@@ -1,0 +1,1 @@
+mongorestore --dir=db
