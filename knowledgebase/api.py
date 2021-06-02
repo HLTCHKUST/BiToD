@@ -8,7 +8,7 @@ from dateutil.parser import parse
 from itertools import combinations
 from typing import Dict, Text, Any, List, Optional, Tuple, Union
 from pymongo import MongoClient
-from parlai.mturk.tasks.woz.knowledgebase.hk_mtr import MTR
+from knowledgebase.hk_mtr import MTR
 import pymongo
 client = MongoClient()
 dblist = client.list_database_names()
