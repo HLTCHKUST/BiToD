@@ -106,7 +106,7 @@ Then, export the DB dump by running the following command
 
 ### Preprocessing
 ```console
-❱❱❱ python preprocess.py --setting en
+❱❱❱ python preprocess.py --setting zh
 ```
 * --setting: data preprocessing for monolingual, bilingual, and crosslingual setting. Options: [en, zh, en_zh, en2zh, zh2en]
 
