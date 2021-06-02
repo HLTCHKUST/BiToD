@@ -7,4 +7,5 @@ tabulate==0.8.9
 tokenizers==0.10.2
 torch==1.7.1
 tqdm==4.49.0
+datasets==1.5.0
 transformers @ git+https://github.com/huggingface/transformers@3d339ee6595b9e42925559ae21a0f6e77f032873
