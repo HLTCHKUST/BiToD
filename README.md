@@ -101,7 +101,7 @@ Install MongoDB server. Please check the documentation in this [link](https://do
 
 Then, export the DB dump by running the following command
 ```console
-❱❱❱ ./db/restore.sh
+❱❱❱ cd ./db && bash restore.sh
 ```
 
 ### Preprocessing
