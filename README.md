@@ -4,7 +4,7 @@
 
 ## Citation:
 If you use any source codes or datasets included in this toolkit in your work, please cite the following paper. The bibtex is listed below:
-
+TO-BE-ADDED
 
 ## Abstract:
 Task-oriented dialogue (ToD) benchmarks provide an important avenue to measure progress and develop better conversational agents. However, existing datasets for end-to-end ToD modelling are limited to a single language, hindering the development of robust end-to-end ToD systems for multilingual countries and regions. Here we introduce BiToD, the first bilingual multi-domain dataset for end-to-end task-oriented dialogue modeling. BiToD contains over 7k multi-domain dialogues (144k utterances) with a large and realistic parallel knowledge base. It serves as an effective benchmark for evaluating bilingual ToD systems and cross-lingual transfer learning approaches. We provide state-of-the-art baselines under three evaluation settings (monolingual, bilingual and cross-lingual). The analysis of our baselines in different settings highlights 1) the effectiveness of training a bilingual ToD system comparing to two independent monolingual ToD systems, and 2) the potential of leveraging a bilingual knowledge base and cross-lingual transfer learning to improve the system performance in the low resource condition.
@@ -12,7 +12,7 @@ Task-oriented dialogue (ToD) benchmarks provide an important avenue to measure p
 
 ## Leaderboard
 
-**Mono-lingual**
+**Monolingual**
 |                |       English (EN)      |       |                      |       |       |       Chinese (ZH)      |       |                      |       |       |
 |----------------:|:-----------------------:|:-----:|:--------------------:|:-----:|:-----:|:-----------------------:|-------|----------------------|-------|-------|
 |                |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |
