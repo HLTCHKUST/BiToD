@@ -7,7 +7,7 @@ If you use any source codes or datasets included in this toolkit in your work, p
 
 
 ## Abstract:
-
+Task-oriented dialogue (ToD) benchmarks provide an important avenue to measure progress and develop better conversational agents. However, existing datasets for end-to-end ToD modelling are limited to a single language, hindering the development of robust end-to-end ToD systems for multilingual countries and regions. Here we introduce BiToD, the first bilingual multi-domain dataset for end-to-end task-oriented dialogue modeling. BiToD contains over 7k multi-domain dialogues (144k utterances) with a large and realistic parallel knowledge base. It serves as an effective benchmark for evaluating bilingual ToD systems and cross-lingual transfer learning approaches. We provide state-of-the-art baselines under three evaluation settings (monolingual, bilingual and cross-lingual). The analysis of our baselines in different settings highlights 1) the effectiveness of training a bilingual ToD system comparing to two independent monolingual ToD systems, and 2) the potential of leveraging a bilingual knowledge base and cross-lingual transfer learning to improve the system performance in the low resource condition.
 
 
 ## Leaderboard
@@ -33,11 +33,11 @@ If you use any source codes or datasets included in this toolkit in your work, p
 |----------------:|:-----------------------:|:-----:|:--------------------:|:-----:|:-----:|:-----------------------:|-------|----------------------|-------|-------|
 |                |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |
 |          mBART |           1.11          |  0.23 |          0.6         |  3.17 |  4.64 |            0            |   0   |           0          |  0.01 |  2.14 |
-|             +T |          36.19          | 16.06 |         41.51        |  22.5 | 42.84 |          24.64          | 11.96 |         29.04        |  8.29 | 28.57 |
-|            +OT |          33.62          | 11.99 |         41.08        | 20.01 | 55.39 |          44.71          | 21.96 |         54.87        | 14.19 | 60.71 |
+|           +CPT |          36.19          | 16.06 |         41.51        |  22.5 | 42.84 |          24.64          | 11.96 |         29.04        |  8.29 | 28.57 |
+|           +MLT |          33.62          | 11.99 |         41.08        | 20.01 | 55.39 |          44.71          | 21.96 |         54.87        | 14.19 | 60.71 |
 |            mT5 |           6.78          |  1.36 |         17.75        | 10.35 | 19.86 |           4.16          |  2.2  |         6.67         |  3.3  | 12.63 |
-|             +T |          44.94          | 24.66 |         47.6         | 29.53 | 48.77 |          43.27          |  23.7 |         49.7         | 13.89 |  51.4 |
-|            +OT |          56.78          | 33.71 |         56.78        | 32.43 | 58.31 |           49.2          | 27.17 |         50.55        | 14.44 | 55.05 
+|           +CPT |          44.94          | 24.66 |         47.6         | 29.53 | 48.77 |          43.27          |  23.7 |         49.7         | 13.89 |  51.4 |
+|           +MLT |          56.78          | 33.71 |         56.78        | 32.43 | 58.31 |           49.2          | 27.17 |         50.55        | 14.44 | 55.05 
 
 ## Dataset
 Training, validation and test data are avalible in `data` folder. We also provide the data split for cross-lingual few shot setting.
