@@ -6,16 +6,6 @@ This repository includes the dataset and baselines of the paper:
 
 **Authors**: Zhaojiang Lin, Andrea Madotto, Genta Indra Winata, Peng Xu, Feijun Jiang, Yuxiang Hu, Chen Shi, Pascale Fung
 
-## Citation:
-The bibtex is listed below:
-<pre>
-@article{lin2021bitod,
-  title={BiToD: A Bilingual Multi-Domain Dataset For Task-Oriented Dialogue Modeling},
-  author={Lin, Zhaojiang and Madotto, Andrea and Winata, Genta Indra and Xu, Peng and Jiang, Feijun and Hu, Yuxiang and Shi, Chen and Fung, Pascale},
-  journal={arXiv preprint arXiv:2106.02787},
-  year={2021}
-}
-</pre>
 
 ## Abstract:
 Task-oriented dialogue (ToD) benchmarks provide an important avenue to measure progress and develop better conversational agents. However, existing datasets for end-to-end ToD modelling are limited to a single language, hindering the development of robust end-to-end ToD systems for multilingual countries and regions. Here we introduce BiToD, the first bilingual multi-domain dataset for end-to-end task-oriented dialogue modeling. BiToD contains over 7k multi-domain dialogues (144k utterances) with a large and realistic parallel knowledge base. It serves as an effective benchmark for evaluating bilingual ToD systems and cross-lingual transfer learning approaches. We provide state-of-the-art baselines under three evaluation settings (monolingual, bilingual and cross-lingual). The analysis of our baselines in different settings highlights 1) the effectiveness of training a bilingual ToD system comparing to two independent monolingual ToD systems, and 2) the potential of leveraging a bilingual knowledge base and cross-lingual transfer learning to improve the system performance in the low resource condition.
@@ -171,3 +161,13 @@ We also support evalute the prediction file:
 ❱❱❱ python evaluate.py --eval_mode eval_file --prediction_file_path result/zh_end2end_predictions.json --setting zh --reference_file_path data/zh_test.json
 ```
 
+## Citation:
+The bibtex is listed below:
+<pre>
+@article{lin2021bitod,
+  title={BiToD: A Bilingual Multi-Domain Dataset For Task-Oriented Dialogue Modeling},
+  author={Lin, Zhaojiang and Madotto, Andrea and Winata, Genta Indra and Xu, Peng and Jiang, Feijun and Hu, Yuxiang and Shi, Chen and Fung, Pascale},
+  journal={arXiv preprint arXiv:2106.02787},
+  year={2021}
+}
+</pre>
