@@ -156,6 +156,7 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 t
 * --save_prefix: prefix of result file
 
 **Evaluate File**
+
 We also support evalute the prediction file:
 ```console
 ❱❱❱ python evaluate.py --eval_mode eval_file --prediction_file_path result/zh_end2end_predictions.json --setting zh --reference_file_path data/zh_test.json
