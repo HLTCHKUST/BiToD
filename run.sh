@@ -121,6 +121,12 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 t
 --fp16 \
 --sharded_ddp zero_dp_3
 
+
+# Note: before finetuning, please delete the files that might cache the training status of the pre-trained model
+cd save/mix_en2zh_mt5_5e-4
+rm -rf train*
+rm -rf checkpoin*
+
 # t5 en2zh finetuning
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py \
 --model_name_or_path save/mix_en2zh_mt5_5e-4 \
@@ -141,6 +147,12 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 t
 --predict_with_generate \
 --fp16 \
 --sharded_ddp zero_dp_3
+
+# Note: before finetuning, please delete the files that might cache the training status of the pre-trained model
+cd save/mix_zh2en_mt5_5e-4
+rm -rf train*
+rm -rf checkpoin*
+
 # t5 zh2en finetuning
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py \
 --model_name_or_path save/mix_zh2en_mt5_5e-4  \
