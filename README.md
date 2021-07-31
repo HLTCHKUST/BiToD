@@ -2,7 +2,7 @@
 
 This repository includes the dataset and baselines of the paper:
 
-**BiToD: A Bilingual Multi-Domain Dataset For Task-Oriented Dialogue Modeling** [[PDF]](https://arxiv.org/pdf/2106.02787.pdf). 
+**BiToD: A Bilingual Multi-Domain Dataset For Task-Oriented Dialogue Modeling** (NeurIPS 2021 Track on Datasets and Benchmarks) [[PDF]](https://arxiv.org/pdf/2106.02787.pdf). 
 
 **Authors**: [Zhaojiang Lin](https://zlinao.github.io), [Andrea Madotto](https://andreamad8.github.io), [Genta Indra Winata](https://gentawinata.com), Peng Xu, Feijun Jiang, Yuxiang Hu, Chen Shi, Pascale Fung
 
@@ -17,7 +17,7 @@ Task-oriented dialogue (ToD) benchmarks provide an important avenue to measure p
 |                |       English (EN)      |       |                      |       |       |       Chinese (ZH)      |       |                      |       |       |
 |----------------:|:-----------------------:|:-----:|:--------------------:|:-----:|:-----:|:-----------------------:|-------|----------------------|-------|-------|
 |                |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |
-|          mBART |            56           | 33.71 |         57.03        | 35.34 | 67.36 |          56.82          | 29.35 |         71.89        | 20.06 | 72.18 |
+|          MinTL(mBART) |            56           | 33.71 |         57.03        | 35.34 | 67.36 |          56.82          | 29.35 |         71.89        | 20.06 | 72.18 |
 |            mT5 |          69.13          | 47.51 |         67.92        | 38.48 | 69.19 |          53.77          | 31.09 |         63.25        | 19.03 | 67.35 
 
 
