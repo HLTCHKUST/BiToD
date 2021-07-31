@@ -2,7 +2,7 @@
 
 This repository includes the dataset and baselines of the paper:
 
-**BiToD: A Bilingual Multi-Domain Dataset For Task-Oriented Dialogue Modeling** (NeurIPS 2021 Track on Datasets and Benchmarks) [[PDF]](https://arxiv.org/pdf/2106.02787.pdf). 
+**BiToD: A Bilingual Multi-Domain Dataset For Task-Oriented Dialogue Modeling** (Accepted in NeurIPS 2021 Track on Datasets and Benchmarks) [[PDF]](https://arxiv.org/pdf/2106.02787.pdf). 
 
 **Authors**: [Zhaojiang Lin](https://zlinao.github.io), [Andrea Madotto](https://andreamad8.github.io), [Genta Indra Winata](https://gentawinata.com), Peng Xu, Feijun Jiang, Yuxiang Hu, Chen Shi, Pascale Fung
 
@@ -18,25 +18,25 @@ Task-oriented dialogue (ToD) benchmarks provide an important avenue to measure p
 |----------------:|:-----------------------:|:-----:|:--------------------:|:-----:|:-----:|:-----------------------:|-------|----------------------|-------|-------|
 |                |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |
 |          MinTL(mBART) |            56           | 33.71 |         57.03        | 35.34 | 67.36 |          56.82          | 29.35 |         71.89        | 20.06 | 72.18 |
-|            mT5 |          69.13          | 47.51 |         67.92        | 38.48 | 69.19 |          53.77          | 31.09 |         63.25        | 19.03 | 67.35 
+|            MinTL(mT5) |          69.13          | 47.51 |         67.92        | 38.48 | 69.19 |          53.77          | 31.09 |         63.25        | 19.03 | 67.35 
 
 
 **Bi-lingual** 
 |                |       English (EN)      |       |                      |       |       |       Chinese (ZH)      |       |                      |       |       |
 |----------------:|:-----------------------:|:-----:|:--------------------:|:-----:|:-----:|:-----------------------:|-------|----------------------|-------|-------|
 |                |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |
-|          mBART |          42.45          | 17.87 |         65.35        | 28.76 | 69.37 |          40.39          | 16.96 |         65.37        |  5.23 |  69.5 |
-|            mT5 |          71.18          | 51.13 |         71.87        | 40.71 | 72.16 |          57.24          | 34.78 |         65.54        | 22.45 |  68.7
+|          MinTL(mBART) |          42.45          | 17.87 |         65.35        | 28.76 | 69.37 |          40.39          | 16.96 |         65.37        |  5.23 |  69.5 |
+|            MinTL(mT5) |          71.18          | 51.13 |         71.87        | 40.71 | 72.16 |          57.24          | 34.78 |         65.54        | 22.45 |  68.7
 
 
 **Cross-lingual**
 |                |  ZH&#8594;EN (10\%)     |       |                      |       |       | EN&#8594;ZH (10\%)      |       |                      |       |       |
 |----------------:|:-----------------------:|:-----:|:--------------------:|:-----:|:-----:|:-----------------------:|-------|----------------------|-------|-------|
 |                |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |           **TSR**           |  **DSR**  | **API_ACC**              |  **BLEU** |  **JGA**  |
-|          mBART |           1.11          |  0.23 |          0.6         |  3.17 |  4.64 |            0            |   0   |           0          |  0.01 |  2.14 |
+|          MinTL(mBART) |           1.11          |  0.23 |          0.6         |  3.17 |  4.64 |            0            |   0   |           0          |  0.01 |  2.14 |
 |           +CPT |          36.19          | 16.06 |         41.51        |  22.5 | 42.84 |          24.64          | 11.96 |         29.04        |  8.29 | 28.57 |
 |           +MLT |          33.62          | 11.99 |         41.08        | 20.01 | 55.39 |          44.71          | 21.96 |         54.87        | 14.19 | 60.71 |
-|            mT5 |           6.78          |  1.36 |         17.75        | 10.35 | 19.86 |           4.16          |  2.2  |         6.67         |  3.3  | 12.63 |
+|            MinTL(mT5) |           6.78          |  1.36 |         17.75        | 10.35 | 19.86 |           4.16          |  2.2  |         6.67         |  3.3  | 12.63 |
 |           +CPT |          44.94          | 24.66 |         47.6         | 29.53 | 48.77 |          43.27          |  23.7 |         49.7         | 13.89 |  51.4 |
 |           +MLT |          56.78          | 33.71 |         56.78        | 32.43 | 58.31 |           49.2          | 27.17 |         50.55        | 14.44 | 55.05 
 
